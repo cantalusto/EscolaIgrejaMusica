@@ -1,0 +1,71 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ma/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Instrumento {
+  id         String   @id @default(cuid())
+  nome       String   @unique
+  quantidade Int
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  
+  // Relacionamento com alunos
+  alunos     Aluno[]
+  
+  @@map("instrumentos")
+}
+
+model Aluno {
+  id            String   @id @default(cuid())
+  nome          String
+  idade         Int
+  instrumentoId String
+  statusPagamento Boolean @default(false)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  
+  // Relacionamentos
+  instrumento   Instrumento @relation(fields: [instrumentoId], references: [id])
+  presencas     Presenca[]
+  pagamentos    Pagamento[]
+  
+  @@map("alunos")
+}
+
+model Presenca {
+  id        String   @id @default(cuid())
+  alunoId   String
+  data      DateTime @default(now())
+  presente  Boolean  @default(false)
+  createdAt DateTime @default(now())
+  
+  // Relacionamento
+  aluno     Aluno    @relation(fields: [alunoId], references: [id], onDelete: Cascade)
+  
+  @@map("presencas")
+}
+
+model Pagamento {
+  id        String   @id @default(cuid())
+  alunoId   String
+  valor     Float
+  mes       String   // Ex: "2024-01", "2024-02"
+  pago      Boolean  @default(false)
+  dataPagamento DateTime?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  
+  // Relacionamento
+  aluno     Aluno    @relation(fields: [alunoId], references: [id], onDelete: Cascade)
+  
+  @@unique([alunoId, mes])
+  @@map("pagamentos")
+}
