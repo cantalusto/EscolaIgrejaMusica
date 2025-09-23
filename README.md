@@ -1,57 +1,143 @@
-# Sistema de Gerenciamento - Escola de Música da Igreja
+# 🎵 Sistema de Gerenciamento - Escola de Música da Igreja
 
-Sistema completo para gerenciar alunos, instrumentos, presenças e pagamentos de uma escola de música.
+<div align="center">
 
-## Funcionalidades
+![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
+Sistema completo e moderno para gerenciar alunos, instrumentos, presenças e pagamentos de escolas de música.
+
+[Demo](#-demonstração) • [Instalação](#-instalação) • [Funcionalidades](#-funcionalidades) • [Documentação](#-documentação)
+
+</div>
+
+---
+
+## 📋 Índice
+
+- [Sobre o Projeto](#-sobre-o-projeto)
+- [Funcionalidades](#-funcionalidades)
+- [Tecnologias](#-tecnologias)
+- [Instalação](#-instalação)
+- [Configuração](#-configuração)
+- [Uso](#-uso)
+- [Estrutura do Projeto](#-estrutura-do-projeto)
+- [API](#-api)
+- [Banco de Dados](#-banco-de-dados)
+- [Contribuição](#-contribuição)
+- [Licença](#-licença)
+
+## 🎯 Sobre o Projeto
+
+O **Sistema de Gerenciamento para Escola de Música** é uma aplicação web completa desenvolvida especificamente para igrejas e instituições de ensino musical. O sistema oferece controle total sobre instrumentos, alunos, presenças e pagamentos, com interface moderna e intuitiva.
+
+### ✨ Principais Diferenciais
+
+- 🔄 **Atualizações em tempo real** - Sincronização automática entre módulos
+- 🎯 **Controle de disponibilidade** - Gestão inteligente de instrumentos limitados
+- 📊 **Relatórios visuais** - Gráficos e estatísticas detalhadas
+- 🎨 **Interface moderna** - Design responsivo e acessível
+- 🔒 **Validações robustas** - Integridade de dados garantida
+
+## 🚀 Funcionalidades
 
 ### 🎵 Gerenciamento de Instrumentos
-- Cadastro de instrumentos com quantidade limitada
-- Controle de disponibilidade em tempo real
-- Validação para evitar conflitos de reserva
+- ✅ Cadastro de instrumentos com quantidade limitada
+- ✅ Controle de disponibilidade em tempo real
+- ✅ Validação para evitar conflitos de reserva
+- ✅ Histórico de uso por instrumento
+- ✅ Relatórios de utilização
 
 ### 👥 Cadastro de Alunos
-- Cadastro completo com nome, idade e instrumento
-- Seleção automática apenas de instrumentos disponíveis
-- Atualização automática de disponibilidade
+- ✅ Cadastro completo (nome, idade, contato, instrumento)
+- ✅ Seleção automática apenas de instrumentos disponíveis
+- ✅ Atualização automática de disponibilidade
+- ✅ Status de pagamento integrado
+- ✅ Histórico completo do aluno
 
 ### 📅 Sistema de Chamada
-- Controle de presença por data
-- Histórico completo de presenças
-- Estatísticas de frequência por aluno
-- Funcionalidades em lote (marcar todos, limpar chamada)
+- ✅ Controle de presença por data
+- ✅ Histórico completo de presenças
+- ✅ Estatísticas de frequência por aluno
+- ✅ Funcionalidades em lote (marcar todos, limpar chamada)
+- ✅ Relatórios de frequência
+- ✅ Filtros por período e aluno
 
 ### 💰 Controle de Pagamentos
-- Geração automática de mensalidades
-- Controle de status de pagamento
-- Relatórios com gráficos e estatísticas
-- Exportação de dados
+- ✅ Geração automática de mensalidades
+- ✅ Controle de status de pagamento
+- ✅ Relatórios com gráficos e estatísticas
+- ✅ Dashboard financeiro
+- ✅ Controle de inadimplência
+- ✅ Histórico de pagamentos
 
-## Tecnologias Utilizadas
+## 🛠 Tecnologias
 
-- **Frontend**: Next.js 14, React 19, TypeScript
-- **UI**: Tailwind CSS, shadcn/ui, Radix UI
-- **Backend**: Next.js API Routes
-- **Banco de Dados**: PostgreSQL com Prisma ORM
-- **Gráficos**: Recharts
-- **Ícones**: Lucide React
+### Frontend
+- **[Next.js 14](https://nextjs.org/)** - Framework React com App Router
+- **[React 19](https://react.dev/)** - Biblioteca para interfaces
+- **[TypeScript](https://www.typescriptlang.org/)** - Tipagem estática
+- **[Tailwind CSS](https://tailwindcss.com/)** - Framework CSS utilitário
+- **[shadcn/ui](https://ui.shadcn.com/)** - Componentes UI modernos
+- **[Radix UI](https://www.radix-ui.com/)** - Componentes acessíveis
+- **[Recharts](https://recharts.org/)** - Biblioteca de gráficos
+- **[Lucide React](https://lucide.dev/)** - Ícones modernos
 
-## Configuração do Projeto
+### Backend
+- **[Next.js API Routes](https://nextjs.org/docs/api-routes/introduction)** - API serverless
+- **[Prisma ORM](https://www.prisma.io/)** - ORM moderno para TypeScript
+- **[PostgreSQL](https://www.postgresql.org/)** - Banco de dados relacional
 
-### 1. Instalação das Dependências
+### Ferramentas de Desenvolvimento
+- **[ESLint](https://eslint.org/)** - Linting de código
+- **[Prettier](https://prettier.io/)** - Formatação de código
+- **[Husky](https://typicode.github.io/husky/)** - Git hooks
+
+## 📦 Instalação
+
+### Pré-requisitos
+
+- Node.js 18+ 
+- PostgreSQL 12+
+- npm ou yarn
+
+### 1. Clone o repositório
+
+\`\`\`bash
+git clone https://github.com/seu-usuario/escola-musica-sistema.git
+cd escola-musica-sistema
+\`\`\`
+
+### 2. Instale as dependências
+
 \`\`\`bash
 npm install
+# ou
+yarn install
 \`\`\`
 
-### 2. Configuração do Banco de Dados
+### 3. Configure as variáveis de ambiente
+
 \`\`\`bash
-# Copie o arquivo de exemplo
 cp .env.example .env
-
-# Configure sua URL do PostgreSQL no arquivo .env
-# DATABASE_URL="postgresql://username:password@localhost:5432/escola_musica?schema=public"
 \`\`\`
 
-### 3. Configuração do Prisma
+Edite o arquivo `.env` com suas configurações:
+
+\`\`\`env
+# Database
+DATABASE_URL="postgresql://username:password@localhost:5432/escola_musica?schema=public"
+
+# Next.js
+NEXTAUTH_URL="http://localhost:3000"
+NEXTAUTH_SECRET="seu-secret-aqui"
+\`\`\`
+
+### 4. Configure o banco de dados
+
 \`\`\`bash
 # Gerar o cliente Prisma
 npx prisma generate
@@ -59,90 +145,251 @@ npx prisma generate
 # Executar as migrações
 npx prisma db push
 
-# (Opcional) Popular o banco com dados iniciais
-npx prisma db seed
+# Popular com dados iniciais (opcional)
+npm run db:seed
 \`\`\`
 
-### 4. Executar o Projeto
+### 5. Execute o projeto
+
 \`\`\`bash
 npm run dev
 \`\`\`
 
 O sistema estará disponível em `http://localhost:3000`
 
-## Estrutura do Banco de Dados
+## ⚙️ Configuração
 
-### Tabelas Principais
+### Scripts Disponíveis
 
-- **instrumentos**: Armazena os instrumentos disponíveis e suas quantidades
-- **alunos**: Dados dos alunos cadastrados
-- **presencas**: Registro de presenças nas aulas
-- **pagamentos**: Controle de mensalidades e pagamentos
+\`\`\`bash
+# Desenvolvimento
+npm run dev          # Executar em modo desenvolvimento
+npm run build        # Build para produção
+npm run start        # Executar build de produção
+npm run lint         # Verificar código
 
-### Relacionamentos
+# Banco de dados
+npm run db:seed      # Popular banco com dados iniciais
+npm run db:reset     # Resetar banco de dados
+npm run db:studio    # Abrir Prisma Studio
+\`\`\`
 
-- Aluno → Instrumento (muitos para um)
-- Aluno → Presenças (um para muitos)
-- Aluno → Pagamentos (um para muitos)
+### Configuração do Banco
 
-## Funcionalidades Detalhadas
+O sistema utiliza PostgreSQL com Prisma ORM. Para configurar:
 
-### Regras de Negócio
+1. Crie um banco PostgreSQL
+2. Configure a `DATABASE_URL` no arquivo `.env`
+3. Execute as migrações com `npx prisma db push`
 
-1. **Instrumentos**:
-   - Cada instrumento tem quantidade limitada
-   - Não é possível excluir instrumento em uso
-   - Não é possível reduzir quantidade abaixo do número de alunos
+## 📖 Uso
 
-2. **Alunos**:
-   - Só podem escolher instrumentos disponíveis
-   - Ao remover aluno, instrumento fica disponível
-   - Pagamento inicial é criado automaticamente
+### Dashboard Principal
 
-3. **Presenças**:
-   - Uma presença por aluno por data
-   - Histórico completo mantido
-   - Estatísticas calculadas automaticamente
+O dashboard oferece uma visão geral do sistema com:
+- Estatísticas gerais (alunos, instrumentos, presenças)
+- Gráficos de frequência
+- Status de pagamentos
+- Ações rápidas
 
-4. **Pagamentos**:
-   - Status do aluno atualizado automaticamente
-   - Relatórios mensais e anuais
-   - Controle de inadimplência
+### Gerenciamento de Instrumentos
 
-## Scripts Disponíveis
+1. Acesse **Instrumentos** no menu
+2. Clique em **Novo Instrumento**
+3. Preencha nome e quantidade disponível
+4. O sistema controlará automaticamente a disponibilidade
 
-- `npm run dev` - Executar em modo desenvolvimento
-- `npm run build` - Build para produção
-- `npm run start` - Executar build de produção
-- `npm run lint` - Verificar código
-- `npx prisma studio` - Interface visual do banco
-- `npx prisma db seed` - Popular banco com dados iniciais
+### Cadastro de Alunos
 
-## Estrutura de Pastas
+1. Acesse **Alunos** no menu
+2. Clique em **Novo Aluno**
+3. Preencha os dados pessoais
+4. Selecione um instrumento disponível
+5. O sistema criará automaticamente o primeiro pagamento
+
+### Sistema de Chamada
+
+1. Acesse **Chamada** no menu
+2. Selecione a data da aula
+3. Marque presença/falta para cada aluno
+4. Use "Marcar Todos" para agilizar o processo
+
+### Controle de Pagamentos
+
+1. Acesse **Pagamentos** no menu
+2. Visualize status de todos os pagamentos
+3. Marque como pago quando necessário
+4. Acesse relatórios detalhados
+
+## 📁 Estrutura do Projeto
 
 \`\`\`
-├── app/                    # Páginas e rotas da aplicação
-│   ├── api/               # API Routes do Next.js
-│   ├── alunos/            # Página de gerenciamento de alunos
-│   ├── chamada/           # Sistema de chamada
-│   ├── instrumentos/      # Gerenciamento de instrumentos
-│   └── pagamentos/        # Controle de pagamentos
-├── components/            # Componentes React reutilizáveis
-│   ├── alunos/           # Componentes específicos de alunos
-│   ├── chamada/          # Componentes de presença
+├── app/                    # App Router do Next.js
+│   ├── api/               # API Routes
+│   │   ├── alunos/        # Endpoints de alunos
+│   │   ├── instrumentos/  # Endpoints de instrumentos
+│   │   ├── presencas/     # Endpoints de presenças
+│   │   └── pagamentos/    # Endpoints de pagamentos
+│   ├── alunos/            # Página de alunos
+│   ├── chamada/           # Página de chamada
+│   ├── instrumentos/      # Página de instrumentos
+│   ├── pagamentos/        # Página de pagamentos
+│   ├── layout.tsx         # Layout principal
+│   └── page.tsx           # Dashboard
+├── components/            # Componentes React
+│   ├── alunos/           # Componentes de alunos
+│   ├── chamada/          # Componentes de chamada
 │   ├── instrumentos/     # Componentes de instrumentos
 │   ├── layout/           # Componentes de layout
 │   ├── pagamentos/       # Componentes de pagamentos
-│   └── ui/               # Componentes base do shadcn/ui
-├── lib/                  # Utilitários e configurações
-├── prisma/               # Schema e migrações do banco
-└── scripts/              # Scripts SQL para popular o banco
+│   └── ui/               # Componentes base (shadcn/ui)
+├── lib/                  # Utilitários
+│   ├── prisma.ts         # Cliente Prisma
+│   ├── types.ts          # Tipos TypeScript
+│   └── utils.ts          # Funções utilitárias
+├── prisma/               # Configuração do banco
+│   └── schema.prisma     # Schema do banco
+└── scripts/              # Scripts SQL
+    ├── seed-database.sql # Estrutura inicial
+    └── create-sample-data.sql # Dados de exemplo
 \`\`\`
 
-## Contribuição
+## 🔌 API
 
-Este sistema foi desenvolvido especificamente para escolas de música de igrejas, mas pode ser adaptado para outras instituições de ensino musical.
+### Endpoints Principais
 
-## Licença
+#### Instrumentos
+- `GET /api/instrumentos` - Listar instrumentos
+- `POST /api/instrumentos` - Criar instrumento
+- `PUT /api/instrumentos/[id]` - Atualizar instrumento
+- `DELETE /api/instrumentos/[id]` - Excluir instrumento
 
-Este projeto é de código aberto e está disponível sob a licença MIT.
+#### Alunos
+- `GET /api/alunos` - Listar alunos
+- `POST /api/alunos` - Criar aluno
+- `PUT /api/alunos/[id]` - Atualizar aluno
+- `DELETE /api/alunos/[id]` - Excluir aluno
+
+#### Presenças
+- `GET /api/presencas` - Listar presenças
+- `POST /api/presencas` - Registrar presença
+
+#### Pagamentos
+- `GET /api/pagamentos` - Listar pagamentos
+- `POST /api/pagamentos` - Criar pagamento
+- `PUT /api/pagamentos/[id]` - Atualizar pagamento
+
+### Exemplo de Uso da API
+
+\`\`\`typescript
+// Buscar alunos
+const response = await fetch('/api/alunos');
+const alunos = await response.json();
+
+// Criar novo aluno
+const novoAluno = await fetch('/api/alunos', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+    nome: 'João Silva',
+    idade: 25,
+    instrumentoId: 1
+  })
+});
+\`\`\`
+
+## 🗄️ Banco de Dados
+
+### Schema Principal
+
+\`\`\`sql
+-- Instrumentos disponíveis
+CREATE TABLE instrumentos (
+  id SERIAL PRIMARY KEY,
+  nome VARCHAR(100) NOT NULL,
+  quantidade INTEGER NOT NULL,
+  created_at TIMESTAMP DEFAULT NOW()
+);
+
+-- Alunos cadastrados
+CREATE TABLE alunos (
+  id SERIAL PRIMARY KEY,
+  nome VARCHAR(200) NOT NULL,
+  idade INTEGER NOT NULL,
+  instrumento_id INTEGER REFERENCES instrumentos(id),
+  status_pagamento VARCHAR(20) DEFAULT 'pendente',
+  created_at TIMESTAMP DEFAULT NOW()
+);
+
+-- Registro de presenças
+CREATE TABLE presencas (
+  id SERIAL PRIMARY KEY,
+  aluno_id INTEGER REFERENCES alunos(id),
+  data DATE NOT NULL,
+  presente BOOLEAN NOT NULL,
+  created_at TIMESTAMP DEFAULT NOW()
+);
+
+-- Controle de pagamentos
+CREATE TABLE pagamentos (
+  id SERIAL PRIMARY KEY,
+  aluno_id INTEGER REFERENCES alunos(id),
+  mes INTEGER NOT NULL,
+  ano INTEGER NOT NULL,
+  valor DECIMAL(10,2) NOT NULL,
+  status VARCHAR(20) DEFAULT 'pendente',
+  data_pagamento DATE,
+  created_at TIMESTAMP DEFAULT NOW()
+);
+\`\`\`
+
+### Relacionamentos
+
+- **Aluno** → **Instrumento** (N:1)
+- **Aluno** → **Presenças** (1:N)
+- **Aluno** → **Pagamentos** (1:N)
+
+## 🤝 Contribuição
+
+Contribuições são sempre bem-vindas! Para contribuir:
+
+1. Fork o projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
+
+### Diretrizes de Contribuição
+
+- Siga os padrões de código existentes
+- Adicione testes para novas funcionalidades
+- Atualize a documentação quando necessário
+- Use commits semânticos
+
+## 📝 Roadmap
+
+- [ ] Sistema de autenticação e autorização
+- [ ] Notificações por email/SMS
+- [ ] Relatórios em PDF
+- [ ] API para integração com outros sistemas
+- [ ] App mobile
+- [ ] Sistema de backup automático
+- [ ] Multi-tenancy (múltiplas escolas)
+
+## 🐛 Problemas Conhecidos
+
+- Nenhum problema conhecido no momento
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+<div align="center">
+
+**Desenvolvido com ❤️ para comunidades musicais**
+
+[⬆ Voltar ao topo](#-sistema-de-gerenciamento---escola-de-música-da-igreja)
+
+</div>
