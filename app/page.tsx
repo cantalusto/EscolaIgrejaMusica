@@ -45,7 +45,7 @@ export default function HomePage() {
           <CardHeader className="text-center">
             <Calendar className="h-12 w-12 mx-auto mb-4 text-primary" />
             <CardTitle>Chamada</CardTitle>
-            <CardDescription>Controle a presença dos alunos nas aulas</CardDescription>
+            <CardDescription>Controle a presença dos alunos nas aulas e histórico de presença</CardDescription>
           </CardHeader>
           <CardContent>
             <Link href="/chamada">

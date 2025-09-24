@@ -19,11 +19,10 @@ export function Navbar() {
 
   return (
     <nav className="bg-card border-b border-border">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-5">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center space-x-2">
             <Image src="/logoemads.png" alt="Logo da Escola de Música" width={180} height={150} />
-            <span className="text-xl font-bold text-foreground">Assembleia de Deus Seara</span>
           </Link>
 
           <div className="hidden md:flex space-x-8">
