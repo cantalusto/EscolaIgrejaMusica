@@ -8,7 +8,7 @@ export default function HomePage() {
     <div className="container mx-auto py-8 px-4">
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-foreground mb-4">Sistema de Gerenciamento</h1>
-        <p className="text-xl text-muted-foreground mb-2">Escola de Música da Igreja</p>
+        <p className="text-xl text-muted-foreground mb-2">Escola de música Assembleia de Deus Seara</p>
         <p className="text-muted-foreground">
           Gerencie alunos, instrumentos, presenças e pagamentos de forma simples e eficiente
         </p>

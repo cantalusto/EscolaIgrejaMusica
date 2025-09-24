@@ -8,12 +8,6 @@ import { Toaster } from "@/components/ui/toaster"
 import { Suspense } from "react"
 import "./globals.css"
 
-export const metadata: Metadata = {
-  title: "Sistema de Gerenciamento - Escola de Música",
-  description:
-    "Sistema completo para gerenciar alunos, instrumentos, presenças e pagamentos da escola de música da igreja",
-  generator: "v0.app",
-}
 
 export default function RootLayout({
   children,

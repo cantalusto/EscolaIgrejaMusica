@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
 import { Music, Users, Calendar, CreditCard, Home } from "lucide-react"
@@ -21,8 +22,8 @@ export function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center space-x-2">
-            <Music className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold text-foreground">Escola de Música</span>
+            <Image src="/logoemads.png" alt="Logo da Escola de Música" width={180} height={150} />
+            <span className="text-xl font-bold text-foreground">Assembleia de Deus Seara</span>
           </Link>
 
           <div className="hidden md:flex space-x-8">
